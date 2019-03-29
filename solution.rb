@@ -9,7 +9,3 @@ get '/' do
   HTML
   end
 end
-
-get '/:nombre' do
-  "hola #{params[:nombre]}"
-end
