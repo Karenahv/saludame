@@ -2,7 +2,9 @@ require 'sinatra'
 
 get '/' do
   unless params[:nombre]
-  "¡Hola desconocido!"
+  <<-HTML
+  <h1>"¡Hola desconocido!"</h1>
+  HTML
   else
   <<-HTML
   <h1>"hola #{params[:nombre]}"</h1>
