@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  unless params[:nombre] || params[:nombre.size] == 0
+  if params[:nombre] == nil || params[:nombre] == ""
   <<-HTML
   <h1>Hola desconocido!</h1>
   HTML
